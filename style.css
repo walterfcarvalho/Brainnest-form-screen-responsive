@@ -134,6 +134,18 @@ button {
     font-weight: bold;
 }
 
+/* Thank You Page */
+.thanks-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thanks-grid div {
+    text-align: center;
+}
+
 /* Mobile */
 @media screen and (max-width: 800px) {
 
