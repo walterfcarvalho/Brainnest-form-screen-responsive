@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradisiac Island</title>
 </head>
+
 <body>
     <section class="sidebar">
         <div class="site-name-container">
@@ -20,6 +22,41 @@
             <br>
             You know you want to.
         </h1>
-    </section>   
+    </section>
+    <section class="form">
+        <p class="action-msg">Let's do this!</p>
+        <form action="./thanks.html" class="form-grid">
+            <div class="item-fname">
+                <label for="f-name">FIRST NAME</label>
+                <input id="f-name" name="first-name" type="text" required />
+            </div>
+            <div class="item-lname">
+                <label for="l-name">LAST NAME</label>
+                <input id="l-name" name="last-name" type="text" required />
+            </div>
+            <div class="item-email">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,4}+\.[a-z]{2,4}"
+                    title="Please enter a valid email address." required />
+            </div>
+            <div class="item-phone">
+                <label for="phone">PHONE</label>
+                <input id="phone" name="phone" type="number" required />
+            </div>
+            <div class="item-password">
+                <label for="password">PASSWORD</label>
+                <input id="password" name="password" type="password" required />
+            </div>
+            <div class="item-c-password">
+                <label for="c-password">CONFIRM PASSWORD</label>
+                <input id="c-password" name="password" type="password" required />
+            </div>
+            <div class="account">
+                <button>Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div>
+        </form>
+    </section>
 </body>
+
 </html>
