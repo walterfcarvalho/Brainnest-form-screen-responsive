@@ -19,7 +19,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-image: url("./assets/images/beach.jpg");
+    background-image: url("./assets/beach.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -132,4 +132,55 @@ button {
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+
+    .grid-container {
+        grid-template-areas: 
+        "sidebar"
+        "header"
+        "form";
+        grid-template-rows: 1.8fr 3fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        height: 30vh;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .action-msg {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-grid > div {
+        margin:10px;
+        padding: 0 1rem;
+    }
+
+    .form-grid .account {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
 }
